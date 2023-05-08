@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/jquery-3.6.4.slim.js" defer></script>
+    <script src="js/bootstrap/bootstrap.min.js" defer></script>
+    <script src="app.js" type="module" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="fondo">
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline"><img src="img/avion.png" width="30px" alt=""> Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link align-middle px-0">
+                                <i class='bx bx-home-alt text-dark'></i> <span class="ms-1 d-none d-sm-inline text-dark">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <i class='bx bx-user-plus text-dark' ></i> <span class="ms-1 d-none d-sm-inline text-dark">Rutas</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col py-3">
+                <div class="container" id="lstClientes">
+                </div>
+                <!-- Modal -->
+                <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <h5 class="card-header">Rutas aereas</h5>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <form id = "frmData">
+                                                    <div class="row g-3">
+                                                        <div class="col-4">
+                                                            <label for="iden" class="form-label">Nombre de la ruta</label>
+                                                            <input type="text" class="form-control" id="iden" name="iden">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label for="iden" class="form-label">Ciudad Origen</label>
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option value="1">Bogota</option>
+                                                                <option value="2">Medellin</option>
+                                                                <option value="3">Bucaramanga</option>
+                                                                <option value="3">Cali</option>
+                                                                <option value="3">Santa marta</option>
+                                                                <option value="3">Pereira</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label for="cDestino" class="form-label">Ciudad Destino</label>
+                                                            <input type="text" class="form-control" id="cDestino" name="cDestino">                  
+                                                        </div>
+                                                    </div>
+                                                    <div class="row g-3">
+                                                        <div class="col-4">
+                                                            <label for="millas" class="form-label">Total de millas de la ruta</label>
+                                                            <input type="text" class="form-control" id="millas" name="millas">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label for="iden" class="form-label">Valor de la milla por ruta</label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text">$</span>
+                                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                                <span class="input-group-text">.00</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container mt-4 text-center" >
+                                                            <input type="submit" data-accion="POST" class="btn btn-primary" value="Guardar Clientes">
+                                                        </div>
+                                                    </div>
+                                                </form>                         
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>        
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

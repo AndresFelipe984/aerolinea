@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+i{
+    font-size: 1.16rem;
+    color: white;
+}
+.bg{
+    background-color:cornflowerblue;
+}
+.fondo{
+    background-color:antiquewhite;
+}

@@ -1,0 +1,60 @@
+{
+  "city": [],
+  "clientes": [
+    {
+      "iden": "6666",
+      "nombres": "Maria Antonieta",
+      "apellidos": "de las Nieves",
+      "email": "jjp@fff.com",
+      "telefono": "6666",
+      "fechanac": "2023-05-05",
+      "ciudadOrigen": "Bucaramanga",
+      "paisOrigen": "Colombia",
+      "id": 2
+    },
+    {
+      "iden": "asdasdadssad",
+      "nombres": "6666",
+      "apellidos": "sdasdsadasdasd",
+      "telefono": "sadasdasdasd",
+      "fechanac": "2019-05-23",
+      "ciudadOrigen": "adasd",
+      "paisOrigen": "asdasdasd",
+      "email": "asdads@gmail.com",
+      "id": 3
+    },
+    {
+      "iden": "6666",
+      "nombres": "Maria Antonieta",
+      "apellidos": "de las Nieves",
+      "email": "jjp@fff.com",
+      "telefono": "6666",
+      "fechanac": "2023-05-05",
+      "ciudadOrigen": "Bucaramanga",
+      "paisOrigen": "Colombia",
+      "id": 7
+    },
+    {
+      "iden": "1212213",
+      "nombres": "mbvngvgn",
+      "apellidos": "chfhgg",
+      "email": "cszdsz@gmail.com",
+      "telefono": "fsfas",
+      "ciudadOrigen": "asdasd",
+      "paisOrigen": "sdadss",
+      "fechanac": "2023-05-04",
+      "id": 8
+    },
+    {
+      "iden": "3",
+      "nombres": "assdasd",
+      "apellidos": "asdasdasdas",
+      "telefono": "516161651",
+      "fechanac": "2023-05-04",
+      "ciudadOrigen": "asdsadadssad",
+      "paisOrigen": "asdasdasd",
+      "email": "asdasdasd@gmail.com",
+      "id": 9
+    }
+  ]
+}
