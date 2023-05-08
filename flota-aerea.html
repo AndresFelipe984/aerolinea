@@ -9,6 +9,8 @@
     <script src="app.js" type="module" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <script src="Apis/rutas-api.js" defer></script>
+    <script src="Components/listas/rutas-lista.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -66,7 +68,7 @@
                                                             <input type="date" class="form-control" id="fechaCompra" name="fechaCompra">
                                                         </div>
                                                         <div class="col-4">
-                                                            <label for="iden" class="form-label">Valor de compra</label>
+                                                            <label for="valorCompra" class="form-label">Valor de compra</label>
                                                             <div class="input-group mb-3">
                                                                 <span class="input-group-text">$</span>
                                                                 <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
@@ -76,8 +78,8 @@
                                                     </div>
                                                     <div class="row g-3">
                                                         <div class="col-4">
-                                                            <label for="millas" class="form-label">Numero de matricula</label>
-                                                            <input type="text" class="form-control" id="millas" name="millas">
+                                                            <label for="numMatricula" class="form-label">Numero de matricula</label>
+                                                            <input type="text" class="form-control" id="numMatricula" name="numMatricula">
                                                         </div>
                                                         <div class="container mt-4 text-center" >
                                                             <input type="submit" data-accion="POST" class="btn btn-primary" value="Guardar Clientes">
